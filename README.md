@@ -8,6 +8,4 @@ Sistema desenvolvido para verificar se palavras ou frases são palíndromos. Rem
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/5696e0c3-0232-4214-b384-254ede730878" width="800">
-
-
+<img src="https://github.com/user-attachments/assets/d67ef130-1c64-4a37-a07a-87e76cae6fbf" width="800">
