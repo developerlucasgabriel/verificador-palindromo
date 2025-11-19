@@ -2,7 +2,6 @@
 let p1 = document.getElementById('result');
 let p2 = document.getElementById('details');
 let palavraInformada = document.getElementById('palavra').value;
-let quantidadeDeLetras = palavra.length;
 
 // RETORNANDO QUANTIDADE DE LETRAS
 function retornaQuantDeLetras(palavra) {
@@ -39,7 +38,7 @@ function quantidadeDeVogaisEConsoantes(palavra) {
     if (quantVogais < 3 && !palavra.includes(" ")) {
         p2.innerHTML += (`<br><br>Palavra muito curta.`);
     }
-    else if (quantVogais > 3 && !palavra.includes("")) {
+    else if (quantVogais > 3 && !palavra.includes(" ")) {
         p2.innerHTML += (`<br><br>Palavra com muitas vogais.`);
     }
     else if (quantVogais < 3 && palavra.includes(" ")) {
