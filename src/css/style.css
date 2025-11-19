@@ -12,15 +12,6 @@
 }
 
 /* ============================
-   CONTAINER PRINCIPAL
-   ============================ */
-.container {
-    min-height: 100vh;              
-    display: flex;
-    flex-direction: column;
-}
-
-/* ============================
    MAIN / ÁREA CENTRAL DO SITE
    ============================ */
 main {
@@ -30,6 +21,16 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1.875rem;
+}
+
+/* ============================
+   CONTAINER PRINCIPAL
+   ============================ */
+.container {
+    min-height: 100vh;              
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* ============================
