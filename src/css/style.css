@@ -87,8 +87,7 @@ main {
    ============================ */
 .form-button {
     display: flex;
-    gap: 0.625rem;               
-    margin-top: 1.25rem;
+    margin: 0rem 2.5rem 1.25rem 2.5rem;
     justify-content: flex-end; 
 }
 
@@ -154,12 +153,10 @@ footer > p {
    RESULTADO DA VERIFICAÇÃO
    ============================ */
     #result-group {
-        margin-top: 1.25rem;
         display: none;    
-        margin: 20px auto;
-        width: 100%;
         border-radius: 0.75rem;
         overflow-wrap: break-word;
+        margin: 0rem 2.5rem 1.25rem 2.5rem;
     }
    
     #div-result {
@@ -167,7 +164,6 @@ footer > p {
         text-align: center;
         background-color: #161b56;
         width: 100%;
-        padding: 10px;
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
     }
@@ -201,7 +197,7 @@ footer > p {
         }
 
         #form-image >  p {
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
         input {
@@ -210,6 +206,14 @@ footer > p {
 
         .form-button {
             justify-content: center;  
+        }
+
+        .input-group {
+            margin: 1.25rem;
+        }
+
+        #result-group {
+            margin: 1.25rem;
         }
 
         #result {
