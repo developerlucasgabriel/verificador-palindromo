@@ -8,5 +8,6 @@ Sistema desenvolvido para verificar se palavras ou frases são palíndromos. Rem
 <p align="center"><strong>📸 Prévia do Site:</strong><p>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/d67ef130-1c64-4a37-a07a-87e76cae6fbf" width="800">
+<img src="https://github.com/user-attachments/assets/23f34b9b-408c-4e7b-a5a3-3abd43285c2d" width="800">
 </div>
+![previaDoSitePalindromo2](https://github.com/user-attachments/assets/23f34b9b-408c-4e7b-a5a3-3abd43285c2d)
