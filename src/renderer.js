@@ -1,7 +1,7 @@
 // VARIÁVEIS GLOBAIS
 let p1 = document.getElementById('result');
 let p2 = document.getElementById('details');
-let palavra = document.getElementById('palavra');
+let palavraInformada = document.getElementById('palavra').value;
 let quantidadeDeLetras = palavra.length;
 
 // RETORNANDO QUANTIDADE DE LETRAS
@@ -35,11 +35,18 @@ function quantidadeDeVogaisEConsoantes(palavra) {
     p2.innerHTML += (`<br><br>Porcentagem de vogais: ${porcentagemDeVogais.toFixed(2)}%`);
     p2.innerHTML +=(`<br>Porcentagem de consoantes: ${porcentagemDeConsoantes.toFixed(2)}%`);
 
-    if (quantVogais < 3) {
+
+    if (quantVogais < 3 && !palavra.includes(" ")) {
         p2.innerHTML += (`<br><br>Palavra muito curta.`);
     }
-    else {
+    else if (quantVogais > 3 && !palavra.includes("")) {
         p2.innerHTML += (`<br><br>Palavra com muitas vogais.`);
+    }
+    else if (quantVogais < 3 && palavra.includes(" ")) {
+        p2.innerHTML += (`<br><br>Frase muito curta.`);
+    }
+    else {
+        p2.innerHTML += (`<br><br>Frase com muitas vogais.`);
     }
 }
 
@@ -70,22 +77,25 @@ function verificacaoPalindromo(palavra) {
     // VALIDAÇÕES PARA SABER SE É UMA PALAVRA OU UMA FRASE.
     if (palavraNormalString === palavraInvertidaString && !frase.includes(" ")) {
         p1.innerHTML = (`A palavra <strong>"${palavraNormalString}"</strong> é um Palindromo! ✅`);
+        p2.innerHTML += (`<br><br>Palavra Normal: ${palavraNormalString}`);
+        p2.innerHTML += (`<br>Palavra Invertida: ${palavraInvertidaString}`);
     }
     else if (palavraNormalString !== palavraInvertidaString && !frase.includes(" ")) {
         p1.innerHTML = (`A palavra <strong>"${palavraNormalString}"</strong> não é um Palindromo!❌`);
+        p2.innerHTML += (`<br><br>Palavra Normal: ${palavraNormalString}`);
+        p2.innerHTML += (`<br>Palavra Invertida: ${palavraInvertidaString}`);
     }
     else if (palavraNormalString === palavraInvertidaString && frase.includes(" ")) {
         p1.innerHTML = (`A frase <strong>"${frase}"</strong> é um Palindromo!✅`);
+        p2.innerHTML += (`<br><br>Frase: ${frase}`)
+        p2.innerHTML += (`<br>Frase Invertida: ${fraseInvertida}`)
     }
     else {
         p1.innerHTML = (`A frase <strong>"${frase}"</strong> não é um Palindromo!❌`);
+        p2.innerHTML += (`<br>Frase: ${frase}`)
+        p2.innerHTML += (`<br>Frase Invertida: ${fraseInvertida}`)
     }
-
-    p2.innerHTML += (`<br><br>Palavra Normal: ${palavraNormalString}`);
-    p2.innerHTML += (`<br>Palavra Invertida: ${palavraInvertidaString}`);
-
 };
-
 
 // Mostrando a palavra informada pelo Usuário
 document.getElementById('btn-verificar').addEventListener('click', function(event) { 
