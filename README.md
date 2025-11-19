@@ -4,7 +4,7 @@ Sistema desenvolvido para verificar se palavras ou frases são palíndromos. Rem
 👉 https://developerlucasgabriel.github.io/verificador-palindromo/
 
  
-<div align="center" style="margin-bottom: 20px;">
+<div>
   <strong>📸 Prévia do Site:</strong>
+  <img src="https://github.com/user-attachments/assets/d2766197-67dc-41ec-888e-83a20ba19f82" width="700">
 </div>
-<img src="https://github.com/user-attachments/assets/d2766197-67dc-41ec-888e-83a20ba19f82" width="700">
