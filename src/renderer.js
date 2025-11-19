@@ -119,7 +119,6 @@ document.getElementById('btn-verificar').addEventListener('click', function(even
     }
     else {
         resultGroup.style.display = "block";
-        p2.innerHTML = `<strong>Detalhes: <strong><br>`;
 
         retornaQuantDeLetras(palavra);
         quantidadeDeVogaisEConsoantes(palavra);
