@@ -53,7 +53,7 @@ function quantidadeDeVogaisEConsoantes(palavra) {
 // VERIFICANDO SE A PALAVRA É UM PALINDROMO OU NÃO?
 function verificacaoPalindromo(palavra) {
 
-    palavra = palavra.toLowerCase();
+    palavra = palavra.toLowerCase()
 
     let palavraNormal = [];
     let palavraInvertida = [];
@@ -119,7 +119,7 @@ document.getElementById('btn-verificar').addEventListener('click', function(even
     }
     else {
         resultGroup.style.display = "block";
-
+        p2.innerHTML = ""
         retornaQuantDeLetras(palavra);
         quantidadeDeVogaisEConsoantes(palavra);
         verificacaoPalindromo(palavra);

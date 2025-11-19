@@ -188,7 +188,7 @@ footer > p {
     #details {
         color: #000;
         line-height: 1.5rem;
-        padding: 1.25rem;
+        padding: 0rem 1.25rem 1.25rem 1.25rem;
     }
 
     /* ============================
